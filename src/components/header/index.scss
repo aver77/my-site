@@ -1,0 +1,49 @@
+@import '../sass/fonts.scss';
+
+%flex {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background: #545454;
+    min-width: 100%;
+    height: 64px;
+    transition: 0.2s linear;
+    font-family: 'Montserrat';
+    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16);
+    z-index:999;
+    &__title {
+        padding-top: 7px;
+        font-family: 'Birthstone';
+        font-style: normal;
+        font-size:44px;
+        color: white;
+    }
+
+    &__menu {
+        @extend %flex;
+        justify-content: space-around;
+    }
+    &__nav ul {
+        padding-top:14px;
+        @extend %flex;
+        li {
+            font-size:22px;
+            padding:0 20px;
+            color: white;
+        }
+    }
+    &__text:focus, &__text:hover, &__text:active {
+        opacity: 0.5;
+    }
+
+
+}
