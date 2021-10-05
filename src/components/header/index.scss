@@ -13,7 +13,7 @@
     left:0;
     width:100%;
 
-    background: #545454;
+    background: fff;
     min-width: 100%;
     height: 64px;
     transition: 0.2s linear;
@@ -25,12 +25,12 @@
         font-family: 'Birthstone';
         font-style: normal;
         font-size:44px;
-        color: white;
+        color: black;
     }
 
     &__menu {
         @extend %flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     &__nav ul {
         padding-top:14px;
@@ -38,7 +38,7 @@
         li {
             font-size:22px;
             padding:0 20px;
-            color: white;
+            color: black;
         }
     }
     &__text:focus, &__text:hover, &__text:active {

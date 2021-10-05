@@ -1,113 +1,27 @@
-%font {
-    font-family: Montserrat;
-    font-style: normal;
-}
-%border {
-    border: 1px solid #545454;
-    border-radius: 10px;
-}
-
 .main {
     margin-top:64px;
-    min-height:500px;
-    background: url('../../images/1.jpg') no-repeat;
+    background: url('../../images/mainPic2.jpg') no-repeat;
+    min-height: 600px;
     background-size: cover;
-    padding-top:64px;
+    display: flex;
 
-    &__info {
-        min-height:500px-64px-64px;
-        background: linear-gradient(to left bottom, #c4c4c4, #a6a6a6, #8a8a8a, #6e6e6e, #545454);
-        border-radius: 10px;
-        display: flex;
-        // justify-content: space-between;
-        flex-wrap:wrap;
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+
+        position: relative;
+        display:flex;
+        justify-content: flex-start;
     }
 
-    &__description {
-        &-profile {
-            padding:38px 0 0 44px;
-            margin: 0 auto;
-        }
-        &-about-me {
-            flex: 1 1 auto;
-            padding:38px 0 0 38px;
-        }
-    }
-
-    &__about {
-        &-linked-title {
-            display: flex;
-        }
-
-        &-section {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        &-title {
-            border-radius: 10px;
-            width: 260px;
-            height: 34px;
-            background: #545454;
-            &_text {
-                @extend %font;
-                font-size:24px;
-                text-align: center;
-                color:#fff;
-                padding-top:5px;
-                
-            }
-            &_border {
-                border-radius: 10px;
-                flex: 1 1 auto;
-                margin: 18px 38px 0 0;
-                height: 0px;
-                @extend %border;
-            }
-        }
-        &-text {
-            @extend %font;
-            font-size:20px;
-            padding-top:12px;
-            a:focus, a:hover, a:active {
-                color: #CECACA;
-                opacity: 0.3;
-            }
-        }
-    }
-    &__text-properties {
-        padding-top: 14px;
-    }
-
-    &__profile-pic {
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-        opacity: 0.8;
-    }
-
-    &__description-items {
-        padding-top: 24px;
-    }
-
-    &__text {
-        &-name {
-            @extend %font;
-            font-size: 24px;
-            color: #CECACA;
-        }
-        &-surname {
-            @extend %font;
-            font-size: 34px;
-            color: #fff;
-        }
-        &-profession {
-            @extend %font;
-            font-size: 20px;
-            color: #CECACA;
-        }
-        &-colored_grey {
-            color: #CECACA;
-        }
+    &__wrapper {
+        box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+        border-radius: 3px;
+        align-self: center;
+        position: absolute;
+        // background: linear-gradient(to right bottom, #b9deed, #cbe1f0, #dbe4f1, #e7e9f0, #efefef);
+        background: white;
+        height: 250px;
+        width:500px;
     }
 }
