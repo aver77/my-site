@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Header from '../header';
 import Main from '../main';
-// import MainProjects from '../main/main-projects';
+import MainAbout from '../main/mainAbout';
 
 import './App.scss';
 
@@ -11,7 +11,7 @@ const App = () => {
         <Router>
             <Route path='/' component={Header}/>
             <Route path='/' component={Main}/>
-            {/* <Route path='/' component={MainProjects}/> */}
+            <Route path='/' component={MainAbout}/>
         </Router>
     );
 }

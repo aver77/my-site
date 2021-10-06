@@ -1,0 +1,82 @@
+%dt {
+    margin-top: 11px;
+    margin-right:4px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.main-about-cards {
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0 -20px;
+
+    .section__first-withdot {
+        margin-top:12px;
+    }
+    &__section {
+        display: flex;
+        .dot {
+            align-self:baseline;
+            margin-top:10px;
+        }
+        &-dots {
+            display: flex;
+            margin-left: 16px;
+        }
+        &-container-dots {
+            &-ru {
+                padding-left: 16.5px;
+            }
+            &-eng {
+                padding-left: 20px;
+            }
+        }
+
+        &-white-dot {
+            @extend %dt;
+            background-color: white;
+        }
+        &-black-dot {
+            @extend %dt;
+            background-color: black;
+        }
+    }
+
+    &__personal,&__education,&__hobies,&__socials {
+        margin: 0 20px;
+        margin-bottom:24px;
+        background: #679FB2;
+        border-radius: 3px;
+        flex-grow: 1;
+        width:300px;
+        height:334px;
+    }
+    &__text-personal, &__text-education, &__text-hobies, &__text-socials {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    &__text-personal,&__text-education {
+        margin-top:4px;
+        p {
+            padding-top:8px;
+        }
+    }
+
+    &__text-title {
+        margin-top:24px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+    }
+    &__border {
+        margin: 0 auto;
+        margin-top:12px;
+        width: 80%;
+        border: 1px solid black;
+    }
+
+}

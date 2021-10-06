@@ -5,7 +5,8 @@
     }
 
     &__text {
-        margin: 70px 40px 0 0;
+        margin: 70px 0 0 0;
+        padding-left: 40px; //
         font-family: 'Montserrat';
         &-name {
             font-size: 24px;
@@ -31,6 +32,8 @@
             -moz-border-radius: 3px; /* Firefox */
             -webkit-border-radius: 3px; /* Safari 4 */
             border-radius: 3px; /* IE 9, Safari 5, Chrome */
+            background-color: #fff;
+            transition: 0.2s linear;
             & + & {
                 margin-left: 14px;
             }

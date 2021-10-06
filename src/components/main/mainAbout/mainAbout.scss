@@ -1,0 +1,17 @@
+.main-about {
+    &__text-title {
+        margin-top:24px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 28px;
+    }
+    &__border {
+        margin:24px 0 24px 0;
+        border: 1px solid black;
+    }
+
+    &__info {
+        min-height: 500px;
+        background-size: cover;
+    }
+}
