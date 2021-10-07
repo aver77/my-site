@@ -13,13 +13,16 @@
     margin: 0 -20px;
 
     .section__first-withdot {
-        margin-top:12px;
+        margin-top:-6px;
+    }
+    .section__second-withdot {
+        margin-top:-6px;
     }
     &__section {
         display: flex;
         .dot {
             align-self:baseline;
-            margin-top:10px;
+            margin-top:20px;
         }
         &-dots {
             display: flex;
@@ -27,9 +30,11 @@
         }
         &-container-dots {
             &-ru {
+                margin-top:12px;
                 padding-left: 16.5px;
             }
             &-eng {
+                margin-top:12px;
                 padding-left: 20px;
             }
         }
@@ -42,6 +47,31 @@
             @extend %dt;
             background-color: black;
         }
+
+        &-hobbies {
+            margin-top:24px;
+            text-align: center;
+        }
+    }
+
+    &__division-chapters {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cards__division-second {
+        margin-top:26px;
+    }
+
+    &__chapter-hobby {
+        margin-top:12px;
+        &-link:focus, &-link:hover, &-link:active {
+            transition: 0.2s linear;
+            opacity: 0.5;
+            & p {
+                transition: 0.2s linear;
+                opacity: 0.5;
+            }
+        }
     }
 
     &__personal,&__education,&__hobies,&__socials {
@@ -51,18 +81,18 @@
         border-radius: 3px;
         flex-grow: 1;
         width:300px;
-        height:334px;
+        height:384px;
     }
     &__text-personal, &__text-education, &__text-hobies, &__text-socials {
         font-family: 'Montserrat';
-        font-size: 20px;
+        font-size: 23px;
         margin: 0 auto;
         width: 80%;
     }
     &__text-personal,&__text-education {
-        margin-top:4px;
+        // margin-top:px;
         p {
-            padding-top:8px;
+            padding-top:18px;
         }
     }
 
@@ -70,13 +100,25 @@
         margin-top:24px;
         text-align: center;
         font-family: 'Montserrat';
-        font-size: 24px;
+        font-size: 26px;
     }
     &__border {
         margin: 0 auto;
-        margin-top:12px;
+        margin-top:18px;
         width: 80%;
         border: 1px solid black;
     }
+
+    &__image-hobbies {
+        height: 80px;
+        width: 80px;
+    }
+    &__text-hobbies {
+        margin-top:4px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 22px;
+    }
+
 
 }
