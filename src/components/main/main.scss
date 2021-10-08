@@ -1,3 +1,4 @@
+
 .main {
     margin-top:64px;
     background: url('../../images/mainPic.jpg') no-repeat;
@@ -14,10 +15,11 @@
         justify-content: flex-start;
     }
 
+    // create media
     &__wrapper {
         flex-grow: 1;
         box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
-        border-radius: 3px;
+        border-radius: 8px;
         align-self: center;
         position: absolute;
         // background: linear-gradient(to right bottom, #b9deed, #cbe1f0, #dbe4f1, #e7e9f0, #efefef);

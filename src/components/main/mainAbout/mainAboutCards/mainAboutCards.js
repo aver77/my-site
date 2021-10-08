@@ -11,6 +11,7 @@ import telegram from '../../../../images/svg/telegram.png';
 import vk from '../../../../images/svg/vk.png';
 import youtube from '../../../../images/svg/youtube.png';
 
+// create media
 const MainAboutCards = () => {
     return (
         <div className="main-about-cards">
@@ -34,6 +35,7 @@ const MainAboutCards = () => {
                     </div>
                 </div>
             </div>
+            {/* create media - fool */}
             <div className="main-about-cards__education">
                 <div className="main-about-cards__title">
                     <p className="main-about-cards__text-title">Education</p>
@@ -129,7 +131,7 @@ const MainAboutCards = () => {
                         </div>
                     </div>
                     <div className="main-about-cards__division-chapters cards__division-second">
-                        <div className="main-about-cards__chapter-hobby">
+                        <div className="main-about-cards__chapter-hobby chapter-hobby-division-second">
                             <a className="main-about-cards__chapter-hobby-link" href="https://vk.com/id142686682" target="noreferrer">
                                 <img className="main-about-cards__image-hobbies" src={vk} alt="learning" />
                                 <p className="main-about-cards__text-hobbies">VK</p>

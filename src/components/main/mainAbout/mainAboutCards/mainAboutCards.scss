@@ -61,6 +61,9 @@
     .cards__division-second {
         margin-top:26px;
     }
+    .chapter-hobby-division-second {
+        margin-left: 10px;
+    }
 
     &__chapter-hobby {
         margin-top:12px;
@@ -76,11 +79,12 @@
 
     &__personal,&__education,&__hobies,&__socials {
         margin: 0 20px;
-        margin-bottom:24px;
+        margin-top:24px;
         background: #679FB2;
-        border-radius: 3px;
+        border-radius: 10px;
         flex-grow: 1;
         width:300px;
+        //cards height
         height:384px;
     }
     &__text-personal, &__text-education, &__text-hobies, &__text-socials {
