@@ -4,7 +4,7 @@ import leftArrow from "./icons/left-arrow.svg";
 import rightArrow from "./icons/right-arrow.svg";
 
 const BtnSlider = ({ direction, moveSlide }) => {
-    console.log(direction, moveSlide);
+    // console.log(direction, moveSlide);
     return (
         <button
         onClick={moveSlide}
@@ -14,4 +14,4 @@ const BtnSlider = ({ direction, moveSlide }) => {
         </button>
     );
 }
-export default BtnSlider
+export default BtnSlider;

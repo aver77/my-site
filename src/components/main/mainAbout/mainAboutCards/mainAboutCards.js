@@ -11,30 +11,19 @@ import telegram from '../../../../images/svg/telegram.png';
 import vk from '../../../../images/svg/vk.png';
 import youtube from '../../../../images/svg/youtube.png';
 
+import PrimalryCard from "./primalryCard";
+
 // create media
 const MainAboutCards = () => {
     return (
         <div className="main-about-cards">
-            <div className="main-about-cards__personal">
-                <div className="main-about-cards__title">
-                    <p className="main-about-cards__text-title">Personal</p>
-                    <div className="main-about-cards__border"></div>
-                </div>
-                <div className="main-about-cards__text-personal">
-                    <div className="main-about-cards__section">
-                        <img className="dot" src={dot} alt="dot"/><p>Age: 20 years old</p>
-                    </div>
-                    <div className="main-about-cards__section">
-                        <img className="dot" src={dot} alt="dot"/><p>Located in: Russia</p>
-                    </div>
-                    <div className="main-about-cards__section">
-                        <img className="dot" src={dot} alt="dot"/><p>Total quantity of learning programming: more than 2 years</p>
-                    </div>
-                    <div className="main-about-cards__section">
-                        <img className="dot" src={dot} alt="dot"/><p>Total quantity of learning Front-end: more than 1 year</p>
-                    </div>
-                </div>
-            </div>
+            <PrimalryCard 
+                title={'Personal'} 
+                firstInfo={'Age: 20 years old'} 
+                secondInfo={'Located in: Russia'} 
+                thirdInfo={'Total quantity of learning programming: more than 2 years'} 
+                fourthInfo={'Total quantity of learning Front-end: more than 1 year'}
+            />
             {/* create media - fool */}
             <div className="main-about-cards__education">
                 <div className="main-about-cards__title">

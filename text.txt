@@ -1,0 +1,14 @@
+            <PrimalryCard 
+                title={'UberEats'} 
+                firstInfo={'Structure: Adaptive layout'} 
+                secondInfo={'About: IT portal'}
+                thirdInfo={'Using technologies: HTML5, CSS3, JS'}
+                fourthInfo={'Technologies details: JS (smooth scroll, fixed header)'}
+            />
+
+            //cards
+            .slider-cards {
+                display:flex;
+                flex-wrap:wrap;
+                margin: 0 -20px;
+            }

@@ -1,13 +1,22 @@
+%dt {
+    margin-top: 11px;
+    margin-right:4px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
 %bord {
     border: 1px solid rgba(34, 34, 34, 0.287);
 }
 /* create media */
 .container-slider {
+    display: flex;
     @extend %bord;
     margin-top:24px;
     align-self: start;
     border-radius: 10px;
-    max-width: 1110px;
+    flex-grow: 1;
     height: 500px;  
     position: relative;
     overflow: hidden;
@@ -82,4 +91,54 @@
     &.active {
         background: rgb(32, 32, 32);
     }
+}
+
+//cards
+.slider-cards {
+    display:flex;
+    flex-wrap:wrap;
+
+    &__section {
+        display: flex;
+
+        .dot {
+            align-self:baseline;
+            margin-top:20px;
+        }
+    }
+
+    &__projects-info {
+        margin-top:24px;
+        background: #679FB2;
+        border-radius: 10px;
+        //cards height
+        width: 100%;
+        min-height:264px;
+    }
+    &__text-for-slider {
+        font-family: 'Montserrat';
+        font-size: 23px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    &__text-for-slider {
+        // margin-top:px;
+        p {
+            padding-top:18px;
+        }
+    }
+
+    &__text-title {
+        margin-top:24px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 26px;
+    }
+    &__border {
+        margin: 0 auto;
+        margin-top:18px;
+        width: 80%;
+        border: 1px solid black;
+    }
+
 }

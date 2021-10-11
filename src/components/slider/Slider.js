@@ -2,11 +2,13 @@ import React, {useState} from 'react';
 import './Slider.scss';
 import BtnSlider from './btnSlider.js';
 import dataSlider from './dataSlider';
+// import TextSlider from './textSlider';
 
 export default function Slider() {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
+    //мб засунуть сюда textslider + в сам mainProjects
     const nextSlide = () => {
         if(slideIndex !== dataSlider.length){
             setSlideIndex(slideIndex + 1)
@@ -20,7 +22,7 @@ export default function Slider() {
         if(slideIndex !== 1){
             setSlideIndex(slideIndex - 1)
         }
-        else if (slideIndex === 1){
+        else if (slideIndex === 1) {
             setSlideIndex(dataSlider.length)
         }
     }
@@ -49,8 +51,8 @@ export default function Slider() {
             <div className="container-dots">
                 {Array.from({length: 6}).map((item, index) => (
                     <div 
-                    onClick={() => moveDot(index + 1)}
-                    className={slideIndex === index + 1 ? "slidedot active" : "slidedot"}
+                        onClick={() => moveDot(index + 1)}
+                        className={slideIndex === index + 1 ? "slidedot active" : "slidedot"}
                     ></div>
                 ))}
             </div>
