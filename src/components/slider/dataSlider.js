@@ -4,50 +4,50 @@ const dataSlider = [
     {
         id: uuidv4(),
         title: 'UberEats',
-        structure: 'Structure: Adaptive layout',
-        about: 'About: Food restaraunt',
-        technologiesTitle: 'Using technologies:',
-        listOfTechnologies: 'HTML5, CSS3, JS'
+        structure: 'Adaptive layout',
+        about: 'Food restaraunt',
+        listOfTechnologies: 'HTML5, CSS3, JS',
+        link: 'https://github.com/aver77/UberEats-desktop-layout'
     },
     {
         id: uuidv4(),
         title: 'PiperNet',
-        structure: 'Structure: Adaptive layout',
-        about: 'About: IT portal',
-        technologiesTitle: 'Using technologies:',
-        listOfTechnologies: 'HTML5, CSS3'
+        structure: 'Adaptive layout',
+        about: 'IT portal',
+        listOfTechnologies: 'HTML5, CSS3',
+        link: 'https://github.com/aver77/css-blocks-layout'
     },
     {
         id: uuidv4(),
         title: 'Odigo',
-        structure: 'Structure: Adaptive layout',
-        about: 'About: Traveling portal',
-        technologiesTitle: 'Using technologies:',
-        listOfTechnologies: 'HTML5, CSS3, JS'
+        structure: 'Adaptive layout',
+        about: 'Traveling portal',
+        listOfTechnologies: 'HTML5, CSS3, JS',
+        link: 'https://github.com/aver77/figma-layout-test'
     },
     {
         id: uuidv4(),
         title: 'Food project',
-        structure: 'Structure: Adaptive layout with active JS using',
-        about: 'About: Healty food article',
-        technologiesTitle: 'Using technologies:',
-        listOfTechnologies: 'HTML5, CSS3, JS (DOM API, slider, calculator, timer)' 
+        structure: 'Adaptive layout with active JS using',
+        about: 'Healty food article',
+        listOfTechnologies: 'HTML5, CSS3, JS (DOM API, slider, calculator, timer)',
+        link: 'https://github.com/aver77/FoodProject'
     },
     {
         id: uuidv4(),
         title: 'Game of thrones DB',
-        structure: 'Structure: React application',
-        about: 'About: All info about GOT using fake API',
-        technologiesTitle: 'Using technologies:',
-        listOfTechnologies: 'SCSS, REST API, React (hooks, class components, react router)'
+        structure: 'React application',
+        about: 'All info about GOT using fake API',
+        listOfTechnologies: 'SCSS, REST API, React (hooks, class components, react router)',
+        link: 'https://github.com/aver77/ReactGotProj'
     },
     {
         id: uuidv4(),
         title: 'Resto app',
-        structure: 'Structure: React application',
-        about: 'About: List of available to order cards using json-server',
-        technologiesTitle: 'Using technologies:',
-        listOfTechnologies: 'SCSS, REST API, Redux, React (hooks, class components, react router)'
+        structure: 'React application',
+        about: 'List of available to order cards using json-server',
+        listOfTechnologies: 'SCSS, REST API, Redux, React (hooks, class components, react router)',
+        link: 'https://github.com/aver77/TrainReduxProj'
     }
 ];
 export default dataSlider;

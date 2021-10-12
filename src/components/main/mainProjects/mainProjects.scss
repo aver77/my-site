@@ -4,16 +4,26 @@
 }
 
 .main-projects {
-    min-height:500px;
+    margin: 0 auto;
+    min-height:580px;
     display: flex;
     flex-wrap:wrap;
+    justify-content: space-between;
 
     &__slide {
-        width: 100%;
-        align-self: flex-start;
+        width: 1100px;
     }
-    &__info {
-        flex-grow: 1;
-        align-items: stretch
+
+    //media
+    .slider-cards {
+        //for block positioning
+        padding-left:48px;
+        flex: 1;
+        min-width: 312px;
+
+        //for cards inside
+        transition: opacity ease-in-out 0.4s;
+        display:flex;
+        flex-wrap:wrap;
     }
 }

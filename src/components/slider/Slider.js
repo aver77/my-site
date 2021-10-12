@@ -4,31 +4,36 @@ import BtnSlider from './btnSlider.js';
 import dataSlider from './dataSlider';
 // import TextSlider from './textSlider';
 
-export default function Slider() {
+export default function Slider({updateData}) {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
     //мб засунуть сюда textslider + в сам mainProjects
     const nextSlide = () => {
         if(slideIndex !== dataSlider.length){
-            setSlideIndex(slideIndex + 1)
+            setSlideIndex(slideIndex + 1);
+            updateData(slideIndex);
         } 
         else if (slideIndex === dataSlider.length){
             setSlideIndex(1)
+            updateData(0)
         }
     }
 
     const prevSlide = () => {
         if(slideIndex !== 1){
-            setSlideIndex(slideIndex - 1)
+            setSlideIndex(slideIndex - 1);
+            updateData(slideIndex - 2);
         }
         else if (slideIndex === 1) {
             setSlideIndex(dataSlider.length)
+            updateData(dataSlider.length - 1);
         }
     }
 
     const moveDot = index => {
-        setSlideIndex(index)
+        setSlideIndex(index);
+        updateData(index - 1);
     }
 
     return (
