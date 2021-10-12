@@ -5,6 +5,7 @@ import Main from '../main';
 import MainAbout from '../main/mainAbout';
 import MainProjects from '../main/mainProjects';
 import MainSkills from '../main/mainSkills';
+import Development from '../development';
 
 import './App.scss';
 
@@ -16,6 +17,7 @@ const App = () => {
             <Route path='/' component={MainAbout}/>
             <Route path='/' component={MainProjects}/>
             <Route path='/' component={MainSkills}/>
+            <Route path='/' component={Development}/>
         </Router>
     );
 }
