@@ -6,8 +6,6 @@ const Development = () => {
 
     const [closeDev,changeCloseDev] = useState(true);
 
-    
-
     if (closeDev) {
         return (
             <div className="development">

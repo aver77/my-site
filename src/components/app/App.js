@@ -6,6 +6,7 @@ import MainAbout from '../main/mainAbout';
 import MainProjects from '../main/mainProjects';
 import MainSkills from '../main/mainSkills';
 import Development from '../development';
+import Footer from '../footer';
 
 import './App.scss';
 
@@ -18,6 +19,7 @@ const App = () => {
             <Route path='/' component={MainProjects}/>
             <Route path='/' component={MainSkills}/>
             <Route path='/' component={Development}/>
+            <Route path='/' component={Footer}/>
         </Router>
     );
 }
