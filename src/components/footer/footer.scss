@@ -1,7 +1,90 @@
+%txt {
+    opacity: 0.9;
+    font-style: normal;
+    font-family: 'Montserrat';
+    color: #fff;
+}
+
 .footer {
-    margin-top:24px;
-    background: url('../../images/mainAboutPic1.jpg') no-repeat;
-    min-height: 300px;
-    background-size: cover;
     display: flex;
+    margin-top:24px;
+    background: url('../../images/footerPic.jpg') no-repeat;
+    min-height: 400px;
+    background-size: cover;
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__title
+    {
+        align-self: center;
+        &-text {
+            @extend %txt;
+            font-family: 'Birthstone';
+            font-size:80px;
+        }
+    }
+
+    &__rights {
+        width:200px;
+        position: absolute;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+        align-self:flex-end;
+        &-text-start,&-text-end {
+            color: #fff;
+            font-family: 'Montserrat';
+            opacity: 0.7;
+        }
+        &-text-end {
+            padding-top:4px;
+        }
+    }
+
+    &__tel-elem,&__mail-elem,&__hh-elem {
+        height: 60px;
+        width: 60px;
+    }
+
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: flex-end;
+        width: 400px;
+        height: 200px;
+        &-title {
+            @extend %txt;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        &-section {
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -7px;
+        }
+        .contact-section_item {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            margin: 10px 7px;
+            right: 0%;
+            transition: 0.2s linear;
+            &:focus,&:hover,&:active {
+                opacity:0.5;
+            }
+        }
+
+        &-number {
+            @extend %txt;
+            font-size: 38px;
+            margin-top: 30px;
+        }
+    }
 }
