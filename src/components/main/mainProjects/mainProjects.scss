@@ -26,4 +26,10 @@
         display:flex;
         flex-wrap:wrap;
     }
+    @media screen and (max-width: 1779px) {
+        .slider-cards {
+            padding-left:0px;
+        }
+    }
+    
 }

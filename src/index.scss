@@ -9,3 +9,13 @@ body {
     margin: 0 auto;
     width: 80%;
 }
+.__container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 799.98px) {
+    .__container {
+        width: 100%;
+    }
+}

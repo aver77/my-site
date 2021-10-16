@@ -9,6 +9,7 @@
 
 .main-about-cards {
     display:flex;
+    justify-content: center;
     flex-wrap:wrap;
     margin: 0 -20px;
 
@@ -84,15 +85,22 @@
         border-radius: 10px;
         flex-grow: 1;
         width:300px;
+        // max-width:600px;
         //cards height
         height:384px;
     }
-    &__text-personal, &__text-education, &__text-hobies, &__text-socials {
+    &__text-personal, &__text-education, &__text-hobies {
         font-family: 'Montserrat';
         font-size: 23px;
         margin: 0 auto;
         width: 80%;
     }
+    @media screen and (max-width: 1850px) {
+        &__text-personal, &__text-education, .main-about-cards__text-hobbies  {
+            font-size: 21px;
+        }
+    }
+
     &__text-personal,&__text-education {
         // margin-top:px;
         p {
@@ -122,6 +130,13 @@
         text-align: center;
         font-family: 'Montserrat';
         font-size: 22px;
+    }
+
+    @media screen and (max-width: 799.98px) {
+        &__personal,&__education,&__hobies,&__socials {
+            border-radius:0px;
+            width:400px;
+        }
     }
 
 

@@ -163,3 +163,12 @@
         }
     }
 }
+
+@media screen and (max-width: 799.98px) {
+    .container-slider {
+        border-radius:0px;
+    }
+    .slider-cards__projects-info {
+        border-radius:0px;
+    }
+}

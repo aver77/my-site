@@ -27,7 +27,7 @@
             justify-content: space-around;
         }
         &-butn {
-            padding: 4px;
+            padding: 4px 6px 4px 6px;
             font-size: 17px;
             -moz-border-radius: 5px; /* Firefox */
             -webkit-border-radius: 5px; /* Safari 4 */
@@ -52,5 +52,29 @@
         width: 200px;
         border-radius: 8px;
         margin:25px 0 0 25px;
+    }
+}
+
+@media screen and (max-width: 799.98px) {
+    .maincard__properties{
+        flex-direction: column;
+        justify-content:center;
+    }
+    .maincard__text {
+        margin: 24px 0 0 0;
+        padding-left: 24px;
+    }
+    .maincard__text-butns {
+        margin:12px 0 0 -24px;
+        justify-content: space-around;
+        
+    }
+
+    .maincard__text-butn + .maincard__text-butn {
+        margin-left: -30px;
+    }
+
+    .maincard__picture {
+        margin:4px 24px 0 24px;
     }
 }

@@ -1,3 +1,4 @@
+
 .main-about {
     &__text-title {
         margin-top:34px;
@@ -13,5 +14,14 @@
     &__info {
         min-height: 384px;
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 799.98px) {
+    .main-about__border {
+        margin:20px 0 0px 0;
+    }
+    .main-about__text-title {
+        margin-top:20px;
     }
 }
