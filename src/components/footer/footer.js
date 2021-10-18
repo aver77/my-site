@@ -7,7 +7,7 @@ import hh from '../../images//svg/hhLogo.svg';
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer__wrapper _container">
+            <div className="footer__wrapper __container">
                 <div className="footer__title">
                     <p className="footer__title-text">NW Project</p>
                 </div>
@@ -20,7 +20,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="footer__unite-section">
-                    <div className="footer__contact">
+                    <div className="footer__contact united-items">
                         <div className="footer__contact-title">
                             Contact:
                         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="footer__additional">
+                    <div className="footer__additional united-items">
                         <div className="footer__additional-title">
                             Additional:
                         </div>

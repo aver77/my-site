@@ -16,7 +16,7 @@ const MainProjects = () => {
     return (
         <>
             <Title text='My projects'/>
-            <div className="__container-slider">
+            <div className="__container">
                 <div className="main-projects">
                     <div className="main-projects__slide">
                         <Slider updateData={updateIndex}/>

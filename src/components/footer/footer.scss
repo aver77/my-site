@@ -28,6 +28,7 @@
     &__title
     {
         align-self: center;
+        padding-right: 48px;
         &-text {
             text-shadow: 3px 5px 3px #000;
             @extend %txt;
@@ -40,6 +41,7 @@
         width:200px;
         position: absolute;
         left:50%;
+        bottom: 0;
         transform:translate(-50%, -50%);
         text-align: center;
         align-self:flex-end;
@@ -57,19 +59,25 @@
     &__unite-section {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
         flex-wrap: wrap;
         align-self: center;
         flex-grow: 1;
+        margin: 0 -24px;
+    }
+    .united-items {
+        margin: 0 24px;
     }
 
     &__tel-elem,&__mail-elem,&__hh-elem {
         height: 60px;
         width: 60px;
     }
-    .footer__tel-elem-text, .footer__mail-elem-text, .footer__hh-elem-text {
+
+    &__tel-elem-text, &__mail-elem-text, &__hh-elem-text {
         @extend %txt;
         align-self: center;
-        margin-left: 24px;
+        margin-left: 12px;
         font-size: 24px;
         text-shadow: 3px 3px 4px #000;
     }
@@ -86,23 +94,23 @@
             margin-bottom: 10px;
         }
         &-section {
-            right: 0;
+            // right: 0;
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
-            margin: 0 -7px;
-        }
-        .contact-section_item {
-            display: flex; 
-            img {
-                border: 2px solid #fff;
-                // box-shadow: 2px 3px 4px #000;
-                border-radius: 50%;
-                margin: 10px 7px;
-                right: 0%;
-                transition: 0.2s linear;
-                &:focus,&:hover,&:active {
-                    opacity:0.5;
+            flex-direction: column;
+
+            .contact-section_item {
+                display: flex;
+                img {
+                    border: 2px solid #fff;
+                    // box-shadow: 2px 3px 4px #000;
+                    border-radius: 50%;
+                    margin: 10px 7px 7px 0;
+                    right: 0%;
+                    transition: 0.2s linear;
+                    &:focus,&:hover,&:active {
+                        opacity:0.5;
+                    }
                 }
             }
         }
@@ -115,7 +123,7 @@
     }
 
     &__additional {
-        width: 300px;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         // align-self: center;
@@ -136,27 +144,62 @@
     }
 }
 
+//title
 @media screen and (max-width: 799.98px) {
-    .footer  {
+    .footer {
         margin-top: 4px;
-        flex-direction: column;
-    }
-    .footer__title {
-        padding-top:24px;
-        margin: 0 auto;
     }
     .footer__title-text {
-        font-size: 70px;
+        font-size: 65px;
     }
-
-    .footer__tel-elem-text, .footer__mail-elem-text, .footer__hh-elem-text {
-        margin-left: 10px;
-        font-size: 15px;
+}
+@media screen and (max-width: 1216px) {
+    .footer__title {
+        margin: 0 auto;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
+    //unite
+    .footer__unite-section {
+        padding-bottom: 74px;
+    }
+}
 
+//contact
+@media screen and (max-width: 799.98px) {
     .footer__contact-title {
-        padding-top:24px;
-        font-size: 34px;
+        font-size: 28px;
+    }
+    //unite
+    .footer__unite-section {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    //wrapper
+    .footer__wrapper {
+        flex-direction: column;
     }
 
+    .footer__tel-elem, .footer__mail-elem, .footer__hh-elem {
+        width:42px;
+        height: 42px;
+    }
+    .footer__tel-elem-text, .footer__mail-elem-text, .footer__hh-elem-text {
+        margin-left: 5px;
+        font-size: 19px;
+    }
+
+}
+
+//additional
+@media screen and (max-width: 799.98px) {
+    .footer__additional {
+        padding-top: 24px;
+    }
+    .footer__additional-title {
+        font-size: 28px;
+    }
+    .footer__additional-text-elem {
+        font-size: 18px;
+    }
 }

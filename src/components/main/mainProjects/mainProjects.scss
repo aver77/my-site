@@ -1,8 +1,3 @@
-._container-slider {
-    margin: 0 auto;
-    width: 80%;
-}
-
 .main-projects {
     margin: 0 auto;
     min-height:580px;
@@ -28,7 +23,10 @@
     }
     @media screen and (max-width: 1779px) {
         .slider-cards {
-            padding-left:0px;
+            padding-left: 0px;
+        }
+        .main-projects__slide {
+            width: 100%;
         }
     }
     

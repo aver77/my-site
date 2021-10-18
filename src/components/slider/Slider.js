@@ -39,6 +39,30 @@ export default function Slider({updateData}) {
     return (
         <div className="container-slider">
             {dataSlider.map((obj, index) => {
+                if (window.innerWidth >= 450 && window.innerWidth <= 1024) {
+                    return (
+                        <div
+                            key={obj.id}
+                            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                        >
+                            <img alt="slider-img"
+                                src={process.env.PUBLIC_URL + `/sliderImgsTablet/img${index + 1}.jpg`} 
+                            />
+                        </div>
+                    )
+                } 
+                if (window.innerWidth < 450) {
+                    return (
+                        <div
+                            key={obj.id}
+                            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                        >
+                            <img alt="slider-img"
+                                src={process.env.PUBLIC_URL + `/sliderImgsMobile/img${index + 1}.jpg`} 
+                            />
+                        </div>
+                    )
+                } 
                 return (
                     <div
                         key={obj.id}
@@ -55,7 +79,7 @@ export default function Slider({updateData}) {
 
             <div className="container-dots">
                 {Array.from({length: 6}).map((item, index) => (
-                    <div 
+                    <div key={dataSlider[index].id}
                         onClick={() => moveDot(index + 1)}
                         className={slideIndex === index + 1 ? "slidedot active" : "slidedot"}
                     ></div>
