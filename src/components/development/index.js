@@ -6,10 +6,10 @@ const Development = () => {
 
     const [closeDev,changeCloseDev] = useState(true);
 
-    if (closeDev) {
+    if (closeDev && !localStorage.getItem('Bar')) {
         return (
             <div className="development">
-                <div onClick={() => changeCloseDev(false)} className="development__close">
+                <div onClick={() => {changeCloseDev(false); localStorage.setItem('Bar', true)}} className="development__close">
                     <img className="development__icon-close" src={close} alt="close" />
                 </div>
                 <p className="development__text">

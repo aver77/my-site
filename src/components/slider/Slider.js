@@ -1,14 +1,33 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Slider.scss';
 import BtnSlider from './btnSlider.js';
 import dataSlider from './dataSlider';
-// import TextSlider from './textSlider';
+import useWindowDimensions from '../windowSize/useWindowDemensions';
 
 export default function Slider({updateData}) {
 
-    const [slideIndex, setSlideIndex] = useState(1)
+    const {width} = useWindowDimensions();
+    const [slideIndex, setSlideIndex] = useState(1);
+    const [windowWidth, changeWindowWidth] = useState(0);
+    const [nameOfFolder,changeNameOfFolder] = useState("");
 
-    //мб засунуть сюда textslider + в сам mainProjects
+    useEffect(() => {
+        changeWindowWidth({width}.width);
+
+        if (windowWidth > 1024) {
+            changeNameOfFolder("Desktop");
+        }
+        if (windowWidth <= 1024 && windowWidth >= 450) {
+            changeNameOfFolder("Tablet");
+        }
+
+        if (windowWidth < 450) {
+            changeNameOfFolder("Mobile");
+        }
+
+        return 0;
+    },[width, windowWidth]);
+
     const nextSlide = () => {
         if(slideIndex !== dataSlider.length){
             setSlideIndex(slideIndex + 1);
@@ -38,42 +57,7 @@ export default function Slider({updateData}) {
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj, index) => {
-                if (window.innerWidth >= 450 && window.innerWidth <= 1024) {
-                    return (
-                        <div
-                            key={obj.id}
-                            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-                        >
-                            <img alt="slider-img"
-                                src={process.env.PUBLIC_URL + `/sliderImgsTablet/img${index + 1}.jpg`} 
-                            />
-                        </div>
-                    )
-                } 
-                if (window.innerWidth < 450) {
-                    return (
-                        <div
-                            key={obj.id}
-                            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-                        >
-                            <img alt="slider-img"
-                                src={process.env.PUBLIC_URL + `/sliderImgsMobile/img${index + 1}.jpg`} 
-                            />
-                        </div>
-                    )
-                } 
-                return (
-                    <div
-                        key={obj.id}
-                        className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-                    >
-                        <img alt="slider-img"
-                            src={process.env.PUBLIC_URL + `/sliderImgs/img${index + 1}.jpg`} 
-                        />
-                    </div>
-                )
-            })}
+            <SlideByWidth name={nameOfFolder} slideIndex={slideIndex}/>
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
@@ -86,5 +70,22 @@ export default function Slider({updateData}) {
                 ))}
             </div>
         </div>
+    )
+}
+
+const SlideByWidth = ({name,slideIndex}) => {
+    return (
+        dataSlider.map((obj, index) => {
+            return (
+                <div
+                    key={obj.id}
+                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                >
+                    <img alt="slider-img"
+                        src={process.env.PUBLIC_URL + `/sliderImgs${name}/img${index + 1}.jpg`} 
+                    />
+                </div>
+            )
+        })
     )
 }
