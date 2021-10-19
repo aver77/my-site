@@ -29,5 +29,10 @@
             width: 100%;
         }
     }
+    @media screen and (max-width: 799.98px) {
+        .main-projects__slide {
+            max-height: 370px;
+        }
+    }
     
 }
