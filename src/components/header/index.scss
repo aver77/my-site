@@ -14,6 +14,7 @@
     left:0;
     width:100%;
     z-index:999;
+    padding-bottom:64px;
 
     background: fff;
     min-width: 100%;
@@ -47,5 +48,20 @@
         opacity: 0.5;
     }
 
+    &__burger {
+        margin-top:10px;
+    }
+    &__burger-line-item {
+        width: 32px;
+        height: 32px;
+    }
+}
 
+.burger {
+    &__navbar {
+        top:-100%;
+        height: 100vh;
+        width: 100%;
+        background: #679FB2;
+    }
 }
