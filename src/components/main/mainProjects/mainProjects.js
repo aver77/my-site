@@ -14,7 +14,7 @@ const MainProjects = () => {
     } 
 
     return (
-        <>
+        <div id="projects">
             <Title text='My projects'/>
             <div className="__container">
                 <div className="main-projects">
@@ -26,7 +26,7 @@ const MainProjects = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 export default MainProjects;

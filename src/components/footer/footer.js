@@ -6,7 +6,7 @@ import hh from '../../images//svg/hhLogo.svg';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id="contact">
             <div className="footer__wrapper __container">
                 <div className="footer__title">
                     <p className="footer__title-text">NW Project</p>

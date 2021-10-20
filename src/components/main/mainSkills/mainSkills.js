@@ -9,7 +9,7 @@ import react from '../../../images/svg/react.png';
 
 const MainSkills = () => {
     return (
-        <>
+        <div id="skills">
             <Title text='My skills'/>
             <div className="_container">
                 <div className="main-skills">
@@ -19,7 +19,7 @@ const MainSkills = () => {
                     <SingleSkill picture={react} text="React" singleClass="main-skills__cont-border main-skills__border-4"/>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 export default MainSkills;

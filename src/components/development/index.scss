@@ -16,8 +16,9 @@
     }
     &__close {
         float: right;
-        margin-top:20px;
-        margin-right:20px;
+        margin: 20px 20px 0 0;
+        // margin-top:20px;
+        // margin-right:20px;
         &:focus,&:hover,&:active {
             transition: 0.2s linear;
             opacity: 0.5;
