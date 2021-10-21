@@ -6,67 +6,6 @@ import burgerIcon from '../../images/svg/menuIcon.png';
 import close from '../../images/svg/close.png';
 import './index.scss';
 
-// const BurgerNavRenderer = () => {
-//     return (
-//         <div className="burger__navbar">
-//             <div onClick={() => changeBurgerClosed(true)} className="burger__close">
-//                 <img className="burger__close-elem" src={close} alt="closeBtn" />
-//             </div>
-//         <div className="burger__title">
-//             <p className="burger__title-text">NW Project</p>
-//         </div>
-//         <nav className="burger__navbar-elems">
-//                 <ul>
-//                     <Link 
-//                         to="about"
-//                         spy={false}
-//                         smooth={true}
-//                         offset={-80-screenHeight}
-//                         duration={500}
-//                     >
-//                         <li onClick={() => changeBurgerClosed(true)} tabIndex="0" className="burger__text">
-//                             About
-//                         </li>
-//                     </Link>
-//                     <Link 
-//                         to="projects"
-//                         spy={false}
-//                         smooth={true}
-//                         offset={-80-screenHeight}
-//                         duration={500}
-//                     >
-//                         <li onClick={() => changeBurgerClosed(true)} tabIndex="0" className="burger__text">
-//                             Projects
-//                         </li>
-//                     </Link>
-//                     <Link 
-//                         to="skills"
-//                         spy={false}
-//                         smooth={true}
-//                         offset={-80-screenHeight}
-//                         duration={500}
-//                     >
-//                         <li onClick={() => changeBurgerClosed(true)} tabIndex="0" className="burger__text">
-//                             Skills
-//                         </li>
-//                     </Link>
-//                     <Link 
-//                         to="contact"
-//                         spy={false}
-//                         smooth={true}
-//                         offset={-screenHeight}
-//                         duration={500}
-//                     >
-//                         <li onClick={() => changeBurgerClosed(true)} tabIndex="0" className="burger__text">
-//                             Contact
-//                         </li>
-//                     </Link>
-//                 </ul>
-//             </nav>
-//         </div>
-//     )
-// }
-
 const BurgerMenu = () => {
 
     const [burgerClosed, changeBurgerClosed] = useState(true);
@@ -112,7 +51,7 @@ const BurgerMenu = () => {
     } 
     if (!usualRender) {
         return (
-            <CSSTransition in={usualRender} classNames='alert' timeout={500}>
+            <CSSTransition in={!usualRender} classNames='alert' timeout={500}>
                 <div className="burger__navbar">
                     <div onClick={() => changeBurgerClosed(true)} className="burger__close">
                         <img className="burger__close-elem" src={close} alt="closeBtn" />
