@@ -18,12 +18,12 @@ const BurgerMenu = () => {
 
     useEffect(() => {
         if (!burgerClosed) {
-            changeUsualRender(false);
             document.body.style.overflow = "hidden";
+            changeUsualRender(false);
         }
         if (burgerClosed) {
-            changeUsualRender(true);
             document.body.style.overflow = "scroll";
+            changeUsualRender(true);
         }
         
     },[burgerClosed,usualRender]);
