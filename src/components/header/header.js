@@ -15,7 +15,7 @@ const Header = () => {
     }
 
     return (
-        <div className="header" id="header">
+        <div className="header">
             <div className="header__menu _container">
                     <p onClick={scrollToTop} className="header__title">NW Project</p>
                 <nav className="header__nav">

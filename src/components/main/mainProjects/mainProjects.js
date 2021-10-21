@@ -5,7 +5,7 @@ import Title from "../mainAbout/title";
 import Slider from "../../slider/Slider";
 import TextSlider from "../../slider/textSlider";
 
-const MainProjects = () => {
+const MainProjects = ({id}) => {
 
     const [index,setIndex] = useState(0);
 
@@ -14,7 +14,7 @@ const MainProjects = () => {
     } 
 
     return (
-        <div id="projects">
+        <div id={id}>
             <Title text='My projects'/>
             <div className="__container">
                 <div className="main-projects">

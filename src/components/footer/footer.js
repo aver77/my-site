@@ -4,9 +4,9 @@ import tel from '../../images/svg/phoneLogo.png';
 import mail from '../../images/svg/mailLogo.png';
 import hh from '../../images//svg/hhLogo.svg';
 
-const Footer = () => {
+const Footer = ({id}) => {
     return (
-        <div className="footer" id="contact">
+        <div className="footer" id={id}>
             <div className="footer__wrapper __container">
                 <div className="footer__title">
                     <p className="footer__title-text">NW Project</p>

@@ -3,9 +3,9 @@ import MainAboutCards from './mainAboutCards';
 import Title from "./title";
 import './mainAbout.scss';
 
-const MainAbout =() => {
+const MainAbout = ({id}) => {
     return (
-        <div id="about" className="main-about">
+        <div id={id} className="main-about">
             {/* <div className="main-about__border"></div> */}
                 <Title text='About me'/>
             <div className="main-about__info __container">

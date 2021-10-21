@@ -7,9 +7,9 @@ import css from '../../../images/svg/css.png';
 import js from '../../../images/svg/javascript.png';
 import react from '../../../images/svg/react.png';
 
-const MainSkills = () => {
+const MainSkills = ({id}) => {
     return (
-        <div id="skills">
+        <div id={id}>
             <Title text='My skills'/>
             <div className="_container">
                 <div className="main-skills">
