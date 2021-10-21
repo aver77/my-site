@@ -1,9 +1,14 @@
 @import '../src/components/sass/reset.scss';
 
+
 body {
     // background: #D8D8D8;
     background: #fff;
-    width: 100vw;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+}
+.components {
+    width: 100%;
 }
 
 ._container {

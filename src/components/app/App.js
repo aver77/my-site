@@ -36,17 +36,17 @@ const App = () => {
 
     if (displayWidth >= 800) {
         return (
-            <>
+            <div className="components">
                 <Header id="header"/>
                 <View/>
-            </>
+            </div>
         )
     }
     return (
-        <>
+        <div className="components">
             <BurgerMenu id="header"/>
             <View/>
-        </>
+        </div>
     )
 }
 
