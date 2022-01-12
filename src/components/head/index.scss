@@ -1,0 +1,127 @@
+@import '../sass/fonts.scss';
+
+%flex {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header {
+    background:#fff;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    padding-bottom:64px;
+
+    background: fff;
+    min-width: 100%;
+    height: 64px;
+    font-family: 'Montserrat';
+    box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.16);
+
+    &__title {
+        cursor: pointer;
+        padding-top: 7px;
+        font-family: 'Birthstone';
+        font-style: normal;
+        font-size:44px;
+        color: black;
+    }
+
+    &__menu {
+        @extend %flex;
+        justify-content: space-between;
+    }
+    &__nav ul {
+        padding-top:14px;
+        @extend %flex;
+        li {
+            cursor: pointer;
+            font-size:22px;
+            padding:0 20px;
+            color: black;
+            transition: 0.2s linear;
+        }
+    }
+    &__text {
+        cursor: pointer;
+    }
+
+    &__text:focus, &__text:hover, &__text:active {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    &__burger {
+        margin-top:10px;
+    }
+    &__burger-line-item {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.burger {
+    &__close {
+        position: absolute;
+        margin-top: 15px;
+        margin-right: 10%;
+        top:0;
+        right: 0;
+    }
+    &__close-elem {
+        height: 32px;
+        width:32px;
+    }
+
+    &__title {
+        cursor: pointer;
+        margin: 0 auto;
+        padding-top: 124px;
+        font-family: 'Birthstone';
+        font-style: normal;
+        font-size:64px;
+        color: black;
+    }
+
+    &__navbar {
+        position: fixed;
+        top:0;
+        bottom: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        background: #679FB2;
+        animation: forwards;
+    }
+
+    &__navbar-elems ul {
+        li {
+            font-size:28px;
+            padding-top:38px;
+            color: black;
+            transition: 0.2s linear;
+        }
+    }
+    &__text:focus, &__text:hover, &__text:active {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-height:420px) {
+    .burger__title {
+        padding-top: 20px;
+    }
+    .burger__navbar-elems ul li {
+        font-size:22px;
+        padding-top:20px;
+    }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import './mainSkills.scss';
 
 const SingleSkill = ({picture,singleClass,text = null}) => {
@@ -17,4 +17,4 @@ const SingleSkill = ({picture,singleClass,text = null}) => {
     )
 }
 
-export default SingleSkill;
+export default memo(SingleSkill);

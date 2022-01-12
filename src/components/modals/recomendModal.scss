@@ -1,0 +1,19 @@
+.modal-window {
+    position: absolute;
+    z-index: 9999;
+}
+.btn-later {
+    border: 0px;
+    &:focus {
+        outline: none;
+    }
+    &-text:focus, &-text:hover, &-text:active {
+        color: #007bff;
+    }
+}
+.btn-ok {
+    border: 0px;
+    &:focus {
+        outline: none;
+    }
+}

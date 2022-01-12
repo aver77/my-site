@@ -1,6 +1,6 @@
-import React from "react";
+import React, { memo } from "react";
 import './mainSkills.scss';
-import Title from "../mainAbout/title";
+import Title from "../mainAbout/MainTitle";
 import SingleSkill from "./singleSkill";
 import html from '../../../images/svg/html.png';
 import css from '../../../images/svg/css.png';
@@ -22,4 +22,4 @@ const MainSkills = ({id}) => {
         </div>
     )
 }
-export default MainSkills;
+export default memo(MainSkills);

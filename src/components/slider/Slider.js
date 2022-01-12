@@ -62,7 +62,7 @@ export default function Slider({updateData}) {
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
             <div className="container-dots">
-                {Array.from({length: 6}).map((item, index) => (
+                {Array.from({length: 7}).map((item, index) => (
                     <div key={dataSlider[index].id}
                         onClick={() => moveDot(index + 1)}
                         className={slideIndex === index + 1 ? "slidedot active" : "slidedot"}

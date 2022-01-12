@@ -1,8 +1,6 @@
-import React from "react";
-import dot from '../../../../images/svg/dotIcon.svg';
-import './mainAboutCards.scss';
+import React, {memo} from "react";
 
-const PrimalryCard = ({title,firstInfo,secondInfo,thirdInfo,fourthInfo,link=null}) => {
+const PrimalryCard = ({dot,title,firstInfo,secondInfo,thirdInfo,fourthInfo,link=null}) => {
 
     return (
         <div className="main-about-cards__personal">
@@ -27,4 +25,4 @@ const PrimalryCard = ({title,firstInfo,secondInfo,thirdInfo,fourthInfo,link=null
         </div>
     )
 }
-export default PrimalryCard;
+export default memo(PrimalryCard);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import './mainProjects.scss';
-import Title from "../mainAbout/title";
+import Title from "../mainAbout/MainTitle";
 import Slider from "../../slider/Slider";
 import TextSlider from "../../slider/textSlider";
 

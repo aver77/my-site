@@ -20,6 +20,7 @@
     height: 580px;  
     position: relative;
     overflow: hidden;
+    box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
 }
 .slide {
     width: 100%;
@@ -95,7 +96,6 @@
 
 //cards
 .slider-cards {
-
     &__section {
         display: flex;
         .dot {
@@ -104,17 +104,14 @@
         }
     }
 
-    //media!!!
     &__projects-info {
         margin-top:24px;
         padding-bottom: 36px;
         background: #679FB2;
         border-radius: 10px;
-        // margin-left: 40px;
-        // align-self: flex-end;
         flex-grow: 1;
-        //cards height
-        // max-height: 500px;
+        box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+        
     }
     &__text-for-slider {
         font-family: 'Montserrat';
@@ -123,7 +120,6 @@
         width: 80%;
     }
     &__text-for-slider {
-        // margin-top:px;
         p {
             padding-top:18px;
         }

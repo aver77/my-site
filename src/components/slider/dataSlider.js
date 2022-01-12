@@ -48,6 +48,14 @@ const dataSlider = [
         about: 'List of available to order cards using json-server',
         listOfTechnologies: 'SCSS, REST API, Redux, React (hooks, class components, react router)',
         link: 'https://github.com/aver77/TrainReduxProj'
+    },
+    {
+        id: uuidv4(),
+        title: 'MERN test proj',
+        structure: 'React + Nodejs application',
+        about: 'Authorization window with personal area',
+        listOfTechnologies: 'REST API, React (hooks, custom hooks, react router), Nodejs, mongoDB',
+        link: 'https://github.com/aver77/MERN-proj-register-access-'
     }
 ];
 export default dataSlider;

@@ -85,9 +85,8 @@
         border-radius: 10px;
         flex-grow: 1;
         width:300px;
-        // max-width:600px;
-        //cards height
         height:384px;
+        box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
     }
     &__text-personal, &__text-education, &__text-hobies {
         font-family: 'Montserrat';
@@ -102,7 +101,6 @@
     }
 
     &__text-personal,&__text-education {
-        // margin-top:px;
         p {
             padding-top:18px;
         }

@@ -1,2 +1,1 @@
-import MainCard from "./mainCard";
-export default MainCard;
+export {default} from './mainCard';
